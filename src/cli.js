@@ -1,7 +1,7 @@
-import {LineEndings, transformLineEnding} from ("./index");
+const {LineEndings, transformLineEnding} = require("./index");
 
 // var helpText = require("./info.js");
-import {help, usage} from("./info");
+const {help, usage} = require("./info");
 
 // Display help text and exit if when someone passes `-h` or `--help`.
 if (process.argv.includes("-h") || process.argv.includes("--help")) {
