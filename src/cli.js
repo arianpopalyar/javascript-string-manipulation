@@ -1,6 +1,5 @@
 const {LineEndings, transformLineEnding} = require("./index");
 
-// var helpText = require("./info.js");
 const {help, usage} = require("./info");
 
 // Display help text and exit if when someone passes `-h` or `--help`.
