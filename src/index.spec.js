@@ -13,13 +13,13 @@ describe("CRLF Converter", () => {
 
     it("should replace CRLF at the end of a string", () => {
       const result = lf`Hello there.\r\n`;
-      assert(result.endsWith("\n"))
+      assert(result.endsWith("there.\n"))
       // Use `String.prototype.endsWith()`
     });
 
     it("should replace CRLF in the middle of a string", () => {
       const result = lf`Hello \r\n\r\nthere.`;
-      assert(result.includes("\n\n"));
+      assert(result.includes("0 \n\nt"));
       // Use `String.prototype.includes()`
     });
   });
