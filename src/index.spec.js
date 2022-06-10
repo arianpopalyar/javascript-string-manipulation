@@ -8,18 +8,16 @@ describe("CRLF Converter", () => {
     it("should replace CRLF at the beginning of a string", () => {
       const result = lf`\r\nHello there.`;
       assert(result.startsWith("\nHello"));
-      // Use `String.prototype.startsWith()`
     });
 
     it("should replace CRLF at the end of a string", () => {
       const result = lf`Hello there.\r\n`;
-      assert(result.endsWith("there.\n"))
-      // Use `String.prototype.endsWith()`
+      assert(result.endsWith("there.\n"));
     });
 
     it("should replace CRLF in the middle of a string", () => {
       const result = lf`Hello \r\n\r\nthere.`;
-      assert(result.includes("0 \n\nt"));
+      assert(result.includes("o \n\nt"));
       // Use `String.prototype.includes()`
     });
   });
